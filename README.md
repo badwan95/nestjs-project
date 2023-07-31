@@ -71,3 +71,8 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Running Docker
+
+1. First create a docker network using `docker network create {NETWORK NAME}`.
+2. Run `docker compose up dev-db -d`, -d means it runs in background.
