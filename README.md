@@ -76,3 +76,10 @@ Nest is [MIT licensed](LICENSE).
 
 1. First create a docker network using `docker network create {NETWORK NAME}`.
 2. Run `docker compose up dev-db -d`, -d means it runs in background.
+
+## Prisma
+
+After installing Prisma CLI, you can initiate it using `npx prisma init`.
+To run Prisma and read the "schema.prisma" file, use `npx prisma migrate dev`, for more info use `npx prisma help`.
+To generate Types for Typescript from the schema, use `npx prisma generate`, this is done automatically when running the `npx prisma migrate dev`.
+To check the database, use `npx prisma studio`.
