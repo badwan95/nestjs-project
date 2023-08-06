@@ -7,8 +7,11 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @Post('signin')
-  signin(): any {
-    return this.authService.signin();
+  signin(
+    @Body() dto: AuthDto,
+    // @Headers('authorization') basicAuthToken: string,
+  ): any {
+    return this.authService.signin(dto);
   }
   @Post('signup')
   signup(@Body() dto: AuthDto): any {

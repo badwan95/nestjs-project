@@ -82,4 +82,5 @@ Nest is [MIT licensed](LICENSE).
 After installing Prisma CLI, you can initiate it using `npx prisma init`.
 To run Prisma and read the "schema.prisma" file, use `npx prisma migrate dev`, for more info use `npx prisma help`.
 To generate Types for Typescript from the schema, use `npx prisma generate`, this is done automatically when running the `npx prisma migrate dev`.
+If you just want to take the current migration which is safer, user `npx prisma migrate deploy`.
 To check the database, use `npx prisma studio`.
